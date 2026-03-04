@@ -42,16 +42,19 @@
     <div class="pt-40 bg-accent">
       <div class="container">
         <!-- wrapper -->
-        <div class="flex items-center gap-5">
+        <div class="flex items-center gap-5 justify-center pt-5">
           <i class="fa-solid fa-bullhorn text-[var(--color-primary)]"></i>
-          <p class="text-[var(--color-primary)] font-bold mt-5 text-center">
+          <p class="text-[var(--color-primary)] font-bold text-center">
             This website provides information about our store. Online
             transactions are coming soon.
           </p>
         </div>
-        <div class="flex flex-col">
-          <img src="../img/banner-home.png" alt="" />
-          <div class="flex flex-col px-5 pb-10">
+        <!-- banner content -->
+        <div
+          class="flex flex-col md:grid md:grid-cols-[2fr_1fr] md:items-center md:justify-center"
+        >
+          <img class="md:order-2" src="../img/banner-home.png" alt="" />
+          <div class="flex flex-col md:order-1 px-5 pb-10">
             <h1 class="mt-5 text-[50px]">
               <span class="bold-text font-black">HUNGRY?</span> YOU'RE IN THE
               RIGHT PLACE
@@ -66,7 +69,9 @@
     <div>
       <div class="container">
         <!-- wrapper -->
-        <div class="flex flex-col">
+        <div
+          class="flex flex-col md:grid md:grid-cols-2 md:items-center md:pb-5"
+        >
           <div class="relative mt-10 w-fit h-[350px] mx-auto">
             <img
               class="relative border-8 border-black rounded-lg w-[300px]"
@@ -79,16 +84,18 @@
               alt=""
             />
           </div>
-          <h2>WELCOME TO GET PIZZA</h2>
-          <p class="text-primary font-bold mt-5">
-            OUR CHEFS ARE WORKING 24/7 AND ARE READY TO ACCEPT VISITORS AND AT
-            ANY TIME OF THE DAY AND NIGHT
-          </p>
-          <p class="mt-5 pb-20">
-            We would like to take this opportunity to welcome you at our Pizza
-            House. We are offering a warm, friendly atmosphere to share a meal
-            with family and friends at any time of the day or evening.
-          </p>
+          <div>
+            <h2>WELCOME TO GET PIZZA</h2>
+            <p class="text-primary font-bold mt-5">
+              OUR CHEFS ARE WORKING 24/7 AND ARE READY TO ACCEPT VISITORS AND AT
+              ANY TIME OF THE DAY AND NIGHT
+            </p>
+            <p class="mt-5 pb-20">
+              We would like to take this opportunity to welcome you at our Pizza
+              House. We are offering a warm, friendly atmosphere to share a meal
+              with family and friends at any time of the day or evening.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -98,7 +105,9 @@
       <div class="container">
         <!-- wrapper -->
         <div class="pt-10 pb-10">
-          <h2 class="text-white">WE OFFER PEOPLE BEST WAY TO EAT BEST FOOD</h2>
+          <h2 class="text-white text-center">
+            WE OFFER PEOPLE BEST WAY TO EAT BEST FOOD
+          </h2>
           <ul class="foodChoices">
             <li>
               <a href=""><img src="../img/pizzaa.png" alt="" /></a>
@@ -117,12 +126,12 @@
             </li>
           </ul>
           <!-- foodCards -->
-          <div class="grid grid-cols-2 gap-2 mt-10">
+          <div class="grid grid-cols-2 gap-2 mt-10 w-fit mx-auto">
             <div class="foodCard">
               <img src="../img/oriental.png" alt="" />
               <h4>PROSQUITTO PIZZA</h4>
               <small>$25.00</small>
-              <div class="flex justify-center">
+              <div class="stars">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -135,7 +144,7 @@
               <img src="../img/oriental.png" alt="" />
               <h4>PROSQUITTO PIZZA</h4>
               <small>$25.00</small>
-              <div class="flex justify-center">
+              <div class="stars">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>

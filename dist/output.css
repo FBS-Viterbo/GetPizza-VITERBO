@@ -308,6 +308,9 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
@@ -350,6 +353,46 @@
   .outline-0 {
     outline-style: var(--tw-outline-style);
     outline-width: 0px;
+  }
+  .md\:order-1 {
+    @media (width >= 48rem) {
+      order: 1;
+    }
+  }
+  .md\:order-2 {
+    @media (width >= 48rem) {
+      order: 2;
+    }
+  }
+  .md\:grid {
+    @media (width >= 48rem) {
+      display: grid;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-\[2fr_1fr\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  .md\:items-center {
+    @media (width >= 48rem) {
+      align-items: center;
+    }
+  }
+  .md\:justify-center {
+    @media (width >= 48rem) {
+      justify-content: center;
+    }
+  }
+  .md\:pb-5 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 5);
+    }
   }
 }
 @layer base {
@@ -416,6 +459,28 @@
     opacity: 0%;
     --tw-duration: 300ms;
     transition-duration: 300ms;
+    @media (width >= 48rem) {
+      position: static;
+    }
+    @media (width >= 48rem) {
+      top: auto;
+    }
+    @media (width >= 48rem) {
+      height: auto;
+    }
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+    @media (width >= 48rem) {
+      align-items: center;
+    }
+    @media (width >= 48rem) {
+      opacity: 100%;
+    }
+    @media (width >= 48rem) {
+      --tw-shadow: 0 0 #0000;
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
   }
   .headerNav ul.open {
     top: calc(var(--spacing) * 35);
@@ -514,6 +579,7 @@
   }
   .foodCard {
     display: flex;
+    max-width: calc(var(--spacing) * 100);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -534,6 +600,15 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
     color: var(--color-white);
+  }
+  .foodCard img {
+    width: calc(var(--spacing) * 30);
+    height: calc(var(--spacing) * 30);
+  }
+  .foodCard .stars {
+    display: flex;
+    justify-content: center;
+    color: var(--color-third);
   }
 }
 @layer utilities;

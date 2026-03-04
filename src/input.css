@@ -55,7 +55,10 @@ sample
 
 @layer components {
   .headerNav ul {
-    @apply flex flex-col gap-5 pt-5 fixed w-full top-26 text-left items-start overflow-hidden right-0 h-0 opacity-0 duration-300;
+    @apply flex flex-col gap-5 pt-5 fixed w-full top-26 text-left items-start overflow-hidden right-0 h-0 opacity-0 duration-300
+    /* desktop */
+    md:opacity-100 md:flex-row md:items-center md:top-auto
+    md:h-auto md:static md:shadow-none;
   }
   .headerNav ul.open {
     @apply h-fit opacity-100 bg-white shadow-md w-full top-35
@@ -111,13 +114,20 @@ sample
   }
 
   .foodCard {
-    @apply flex flex-col gap-2 justify-center items-center border-2 border-white py-10 px-5 rounded-2xl;
+    @apply flex flex-col gap-2 justify-center items-center border-2 border-white py-10 px-5 rounded-2xl max-w-100;
   }
   .foodCard h4 {
     @apply text-white text-center;
   }
   .foodCard small {
     @apply font-bold text-white text-center;
+  }
+  .foodCard img {
+    @apply size-30;
+  }
+  .foodCard .stars {
+    @apply flex justify-center;
+    color: var(--color-third);
   }
 }
 
