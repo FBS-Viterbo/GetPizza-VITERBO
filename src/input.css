@@ -129,7 +129,7 @@ sample
   }
 
   .foodCard {
-    @apply flex flex-col gap-2 justify-center items-center border-2 border-white py-10 px-5 rounded-2xl max-w-100 absolute -top-9999;
+    @apply flex flex-col gap-2 justify-center items-center border-2 border-white py-10 px-5 rounded-2xl max-w-100 absolute -top-9999 md:w-[500px];
   }
   .foodCard.active {
     @apply relative top-0;
@@ -141,7 +141,7 @@ sample
     @apply font-bold text-white text-center;
   }
   .foodCard img {
-    @apply size-30;
+    @apply size-40;
   }
   .foodCard .stars {
     @apply flex justify-center;

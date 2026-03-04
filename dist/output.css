@@ -242,9 +242,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-\[350px\] {
     height: 350px;
   }
@@ -263,11 +260,8 @@
   .max-w-\[600px\] {
     max-width: 600px;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
+  .max-w-\[1200px\] {
+    max-width: 1200px;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -295,10 +289,6 @@
   }
   .rounded-md {
     border-radius: var(--radius-md);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-8 {
     border-style: var(--tw-border-style);
@@ -375,16 +365,9 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .outline-0 {
     outline-style: var(--tw-outline-style);
@@ -423,11 +406,6 @@
   .md\:grid-cols-\[2fr_1fr\] {
     @media (width >= 48rem) {
       grid-template-columns: 2fr 1fr;
-    }
-  }
-  .md\:flex-row {
-    @media (width >= 48rem) {
-      flex-direction: row;
     }
   }
   .md\:items-center {
@@ -690,6 +668,9 @@
     border-color: var(--color-white);
     padding-inline: calc(var(--spacing) * 5);
     padding-block: calc(var(--spacing) * 10);
+    @media (width >= 48rem) {
+      width: 500px;
+    }
   }
   .foodCard.active {
     position: relative;
@@ -706,8 +687,8 @@
     color: var(--color-white);
   }
   .foodCard img {
-    width: calc(var(--spacing) * 30);
-    height: calc(var(--spacing) * 30);
+    width: calc(var(--spacing) * 40);
+    height: calc(var(--spacing) * 40);
   }
   .foodCard .stars {
     display: flex;
