@@ -309,6 +309,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-15 {
+    padding-inline: calc(var(--spacing) * 15);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -649,7 +652,7 @@
   }
   .foodCard {
     position: absolute;
-    top: calc(var(--spacing) * 9999);
+    top: calc(var(--spacing) * -9999);
     display: flex;
     max-width: calc(var(--spacing) * 100);
     flex-direction: column;

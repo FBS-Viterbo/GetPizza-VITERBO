@@ -129,7 +129,7 @@ sample
   }
 
   .foodCard {
-    @apply flex flex-col gap-2 justify-center items-center border-2 border-white py-10 px-5 rounded-2xl max-w-100 absolute top-9999;
+    @apply flex flex-col gap-2 justify-center items-center border-2 border-white py-10 px-5 rounded-2xl max-w-100 absolute -top-9999;
   }
   .foodCard.active {
     @apply relative top-0;
