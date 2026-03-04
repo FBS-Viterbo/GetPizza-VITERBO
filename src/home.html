@@ -17,7 +17,7 @@
         <!-- wrapper -->
         <div class="flex justify-between items-center">
           <!-- logo -->
-          <img src="../img/LOGO.png" alt="" />
+          <img class="w-30" src="../img/LOGO.png" alt="" />
           <!-- navigation -->
           <nav class="headerNav">
             <ul>
@@ -39,23 +39,25 @@
     </header>
 
     <!-- banner -->
-    <div class="pt-40 bg-accent">
+    <div class="pt-25 bg-accent">
+      <!-- wrapper -->
+      <div
+        class="flex items-center gap-5 justify-center pt-5 px-5 relative z-4 bg-white"
+      >
+        <i class="fa-solid fa-bullhorn text-[var(--color-primary)]"></i>
+        <p class="text-[var(--color-primary)] font-bold text-center">
+          This website provides information about our store. Online transactions
+          are coming soon.
+        </p>
+      </div>
       <div class="container">
-        <!-- wrapper -->
-        <div class="flex items-center gap-5 justify-center pt-5">
-          <i class="fa-solid fa-bullhorn text-[var(--color-primary)]"></i>
-          <p class="text-[var(--color-primary)] font-bold text-center">
-            This website provides information about our store. Online
-            transactions are coming soon.
-          </p>
-        </div>
         <!-- banner content -->
         <div
           class="flex flex-col md:grid md:grid-cols-[2fr_1fr] md:items-center md:justify-center"
         >
           <img class="md:order-2" src="../img/banner-home.png" alt="" />
           <div class="flex flex-col md:order-1 px-5 pb-10">
-            <h1 class="mt-5 text-[50px]">
+            <h1 class="mt-5 text-[50px] max-w-[600px]">
               <span class="bold-text font-black">HUNGRY?</span> YOU'RE IN THE
               RIGHT PLACE
             </h1>
@@ -109,20 +111,20 @@
             WE OFFER PEOPLE BEST WAY TO EAT BEST FOOD
           </h2>
           <ul class="foodChoices">
-            <li>
-              <a href=""><img src="../img/pizzaa.png" alt="" /></a>
+            <li class="active">
+              <a><img src="../img/pizzaa.png" alt="" /></a>
             </li>
             <li>
-              <a href=""><img src="../img/burger.png" alt="" /></a>
+              <a><img src="../img/burger.png" alt="" /></a>
             </li>
             <li>
-              <a href=""><img src="../img/chicken.png" alt="" /></a>
+              <a><img src="../img/chicken.png" alt="" /></a>
             </li>
             <li>
-              <a href=""><img src="../img/drinks.png" alt="" /></a>
+              <a><img src="../img/drinks.png" alt="" /></a>
             </li>
             <li>
-              <a href=""><img src="../img/cake.png" alt="" /></a>
+              <a><img src="../img/cake.png" alt="" /></a>
             </li>
           </ul>
           <!-- foodCards -->
@@ -162,18 +164,23 @@
     <div class="bg-primary">
       <div class="container">
         <!-- wrapper -->
-        <div class="py-10 flex flex-col justify-center items-center">
-          <h2 class="text-white">LET'S CONNECT</h2>
-          <small class="text-white"
-            >and get a 10% off bill offers and invites</small
-          >
-          <div class="flex gap-2 bg-white px-5 mt-5 py-2 rounded-md">
-            <input
-              class="outline-0"
-              type="text"
-              placeholder="YOUR EMAIL ADDRESS"
-            />
-            <a href="" class="btn btn--third">SUBSCRIBE</a>
+        <div class="md:grid md:grid-cols-2 md:items-center md:justify-center">
+          <img class="hidden md:block" src="../img/chef.png" alt="" />
+          <div>
+            <div class="py-10 flex flex-col justify-center items-center">
+              <h2 class="text-white">LET'S CONNECT</h2>
+              <small class="text-white"
+                >and get a 10% off bill offers and invites</small
+              >
+              <div class="flex gap-2 bg-white px-5 mt-5 py-2 rounded-md">
+                <input
+                  class="outline-0"
+                  type="text"
+                  placeholder="YOUR EMAIL ADDRESS"
+                />
+                <a href="" class="btn btn--third">SUBSCRIBE</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -201,11 +208,12 @@
             <p>Monday - Friday</p>
             <p>10.00 AM-11.00 PM</p>
           </div>
-          <p>0123456987</p>
+          <p class="text-primary">0123456987</p>
         </div>
       </div>
     </div>
 
     <script src="../js/toggleMenu.js"></script>
+    <script src="../js/tab.js"></script>
   </body>
 </html>

@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-yellow-600: oklch(68.1% 0.162 75.834);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -196,6 +197,9 @@
   .left-15 {
     left: calc(var(--spacing) * 15);
   }
+  .z-4 {
+    z-index: 4;
+  }
   .z-50 {
     z-index: 50;
   }
@@ -235,8 +239,14 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .h-\[350px\] {
     height: 350px;
+  }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
   }
   .w-\[300px\] {
     width: 300px;
@@ -246,6 +256,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[600px\] {
+    max-width: 600px;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -293,6 +306,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -314,8 +330,8 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
-  .pt-40 {
-    padding-top: calc(var(--spacing) * 40);
+  .pt-25 {
+    padding-top: calc(var(--spacing) * 25);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
@@ -362,6 +378,11 @@
   .md\:order-2 {
     @media (width >= 48rem) {
       order: 2;
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
     }
   }
   .md\:grid {
@@ -475,6 +496,9 @@
       align-items: center;
     }
     @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+    @media (width >= 48rem) {
       opacity: 100%;
     }
     @media (width >= 48rem) {
@@ -483,7 +507,7 @@
     }
   }
   .headerNav ul.open {
-    top: calc(var(--spacing) * 35);
+    top: calc(var(--spacing) * 28);
     height: fit-content;
     width: 100%;
     background-color: var(--color-white);
@@ -541,8 +565,10 @@
   }
   .btn {
     width: fit-content;
+    cursor: pointer;
     border-radius: var(--radius-2xl);
-    padding: calc(var(--spacing) * 4);
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 2);
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
@@ -570,12 +596,23 @@
   .foodChoices {
     margin-block: calc(var(--spacing) * 5);
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: calc(var(--spacing) * 2);
+    gap: calc(var(--spacing) * 5);
+  }
+  .foodChoices li {
+    cursor: pointer;
   }
   .foodChoices li img {
     width: calc(var(--spacing) * 20);
     height: calc(var(--spacing) * 20);
+  }
+  .foodChoices li.active {
+    border-radius: calc(infinity * 1px);
+    border-style: var(--tw-border-style);
+    border-width: 5px;
+    border-color: var(--color-yellow-600);
+    padding: calc(var(--spacing) * 1);
   }
   .foodCard {
     display: flex;
