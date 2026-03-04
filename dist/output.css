@@ -306,9 +306,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
-  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -400,14 +397,29 @@
       grid-template-columns: 2fr 1fr;
     }
   }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
   .md\:items-center {
     @media (width >= 48rem) {
       align-items: center;
     }
   }
+  .md\:items-start {
+    @media (width >= 48rem) {
+      align-items: flex-start;
+    }
+  }
   .md\:justify-center {
     @media (width >= 48rem) {
       justify-content: center;
+    }
+  }
+  .md\:gap-10 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 10);
     }
   }
   .md\:pb-5 {
@@ -576,11 +588,25 @@
     background-color: var(--color-primary);
     color: var(--color-white);
   }
+  .btn--primary:hover {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+    border-color: var(--color-primary);
+    background-color: var(--color-white);
+    color: var(--color-primary);
+  }
   .btn--secondary {
     border-style: var(--tw-border-style);
     border-width: 1px;
     border-color: var(--color-primary);
     color: var(--color-white);
+  }
+  .btn--secondary:hover {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+    border-color: var(--color-primary);
+    background-color: var(--color-white);
+    color: var(--color-primary);
   }
   .btn--third {
     background-color: var(--color-third);
@@ -592,6 +618,13 @@
     color: var(--color-white);
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .btn--third:hover {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+    border-color: var(--color-primary);
+    background-color: var(--color-white);
+    color: var(--color-primary);
   }
   .foodChoices {
     margin-block: calc(var(--spacing) * 5);
@@ -615,6 +648,8 @@
     padding: calc(var(--spacing) * 1);
   }
   .foodCard {
+    position: absolute;
+    top: calc(var(--spacing) * 9999);
     display: flex;
     max-width: calc(var(--spacing) * 100);
     flex-direction: column;
@@ -627,6 +662,10 @@
     border-color: var(--color-white);
     padding-inline: calc(var(--spacing) * 5);
     padding-block: calc(var(--spacing) * 10);
+  }
+  .foodCard.active {
+    position: relative;
+    top: calc(var(--spacing) * 0);
   }
   .foodCard h4 {
     text-align: center;

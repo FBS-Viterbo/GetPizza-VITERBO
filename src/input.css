@@ -97,12 +97,21 @@ sample
   .btn--primary {
     @apply bg-primary text-white;
   }
+  .btn--primary:hover {
+    @apply bg-white text-primary border-2 border-primary;
+  }
   .btn--secondary {
     @apply border-1 border-primary text-white;
+  }
+  .btn--secondary:hover {
+    @apply bg-white text-primary border-2 border-primary;
   }
   .btn--third {
     background-color: var(--color-third);
     @apply text-white font-thin px-4 py-2 rounded shadow;
+  }
+  .btn--third:hover {
+    @apply bg-white text-primary border-2 border-primary;
   }
 
   .foodChoices {
@@ -120,7 +129,10 @@ sample
   }
 
   .foodCard {
-    @apply flex flex-col gap-2 justify-center items-center border-2 border-white py-10 px-5 rounded-2xl max-w-100;
+    @apply flex flex-col gap-2 justify-center items-center border-2 border-white py-10 px-5 rounded-2xl max-w-100 absolute top-9999;
+  }
+  .foodCard.active {
+    @apply relative top-0;
   }
   .foodCard h4 {
     @apply text-white text-center;
