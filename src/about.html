@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <title>GetPizza</title>
   </head>
   <body>
@@ -85,47 +89,130 @@
     </div>
 
     <!-- our story -->
-    <div class="mt-20">
+    <section class="py-20">
       <div class="container">
+        <!-- title -->
+        <h3 class="text-center text-black mb-12 font-extrabold">OUR STORY</h3>
         <!-- wrapper -->
-        <div>
-          <h2 class="text-center">OUR STORY</h2>
-          <div class="grid md:grid-cols-2 gap-20 items-center">
-            <div class="flex flex-col items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- drop down left -->
+          <div class="flex flex-col justify-center items-center w-full gap-5">
+            <div class="contactFaq__item group w-full">
               <div
-                class="w-full flex flex-col gap-5 mt-10 mb-15 items-center justify-center"
+                class="contactFaq__item--question flex justify-between items-center bg-primary p-4 cursor-pointer text-white"
               >
-                <div class="ourStory">
-                  <span>1985</span>
-                  <i class="fa-solid fa-chevron-up"></i>
-                </div>
-                <div class="ourStory">
-                  <span>1990</span>
-                  <i class="fa-solid fa-chevron-up"></i>
-                </div>
-                <div class="ourStory">
-                  <span>2000</span>
-                  <i class="fa-solid fa-chevron-up"></i>
-                </div>
-                <div class="ourStory">
-                  <span>2010</span>
-                  <i class="fa-solid fa-chevron-up"></i>
-                </div>
-                <div class="ourStory">
-                  <span>2021</span>
-                  <i class="fa-solid fa-chevron-up"></i>
+                <h5>1985</h5>
+                <i
+                  class="fa-solid fa-chevron-down transition-transform duration-300 group-[.active]:rotate-180"
+                ></i>
+              </div>
+              <div
+                class="contactFaq__item--answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50"
+              >
+                <div class="p-6 text-black/70 leading-relaxed">
+                  1985 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua enim ad minim veniam. ex ea commodo consequatuais
+                  irure. Dolor in reprehenderit in volue.
                 </div>
               </div>
             </div>
+
+            <div class="contactFaq__item group w-full">
+              <div
+                class="contactFaq__item--question flex justify-between items-center bg-primary p-4 cursor-pointer text-white"
+              >
+                <h5>1990</h5>
+                <i
+                  class="fa-solid fa-chevron-down transition-transform duration-300 group-[.active]:rotate-180"
+                ></i>
+              </div>
+              <div
+                class="contactFaq__item--answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50"
+              >
+                <div class="p-6 text-black/70 leading-relaxed">
+                  1990 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua enim ad minim veniam. ex ea commodo consequatuais
+                  irure. Dolor in reprehenderit in volue.
+                </div>
+              </div>
+            </div>
+
+            <div class="contactFaq__item group w-full">
+              <div
+                class="contactFaq__item--question flex justify-between items-center bg-primary p-4 cursor-pointer text-white"
+              >
+                <h5>2000</h5>
+                <i
+                  class="fa-solid fa-chevron-down transition-transform duration-300 group-[.active]:rotate-180"
+                ></i>
+              </div>
+              <div
+                class="contactFaq__item--answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50"
+              >
+                <div class="p-6 text-black/70 leading-relaxed">
+                  2000 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua enim ad minim veniam. ex ea commodo consequatuais
+                  irure. Dolor in reprehenderit in volue.
+                </div>
+              </div>
+            </div>
+
+            <div class="contactFaq__item group w-full">
+              <div
+                class="contactFaq__item--question flex justify-between items-center bg-primary p-4 cursor-pointer text-white"
+              >
+                <h5>2010</h5>
+                <i
+                  class="fa-solid fa-chevron-down transition-transform duration-300 group-[.active]:rotate-180"
+                ></i>
+              </div>
+              <div
+                class="contactFaq__item--answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50"
+              >
+                <div class="p-6 text-black/70 leading-relaxed">
+                  2010 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua enim ad minim veniam. ex ea commodo consequatuais
+                  irure. Dolor in reprehenderit in volue.
+                </div>
+              </div>
+            </div>
+
+            <div class="contactFaq__item group w-full">
+              <div
+                class="contactFaq__item--question flex justify-between items-center bg-primary p-4 cursor-pointer text-white"
+              >
+                <h5>2021</h5>
+                <i
+                  class="fa-solid fa-chevron-down transition-transform duration-300 group-[.active]:rotate-180"
+                ></i>
+              </div>
+              <div
+                class="contactFaq__item--answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-50"
+              >
+                <div class="p-6 text-black/70 leading-relaxed">
+                  2021 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua enim ad minim veniam. ex ea commodo consequatuais
+                  irure. Dolor in reprehenderit in volue.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden md:flex justify-center items-center">
             <img
-              class="rounded-[30px] hidden md:block"
-              src="../img/meeting.png"
-              alt="meeting"
+              class="rounded-3xl lg:h-130"
+              src="../IMG/meeting.png"
+              alt="Meeting"
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- offer -->
     <div class="bg-secondary py-10">
@@ -297,26 +384,102 @@
       </div>
     </div>
 
-    <!-- review -->
-    <div>
+    <!-- clients review -->
+    <section class="py-12 md:py-12">
       <div class="container">
+        <h2 class="text-center justify-center mb-7">CLIENTS REVIEW</h2>
         <!-- wrapper -->
-        <div class="py flex flex-col gap-5 items-center justify-center py-10">
-          <h2>CLIENTS REVIEW</h2>
-          <img
-            class="w-[100px] h-[100px] rounded-full"
-            src="../img/feedback6.png"
-            alt="feedback"
-          />
-          <p>
-            "Etiam sapien sem at sagittis congue augue massa varius sodales
-            sapien undo tempus dolor egestas magna suscipit magna tempus aliquet
-            porta sodales augue suscipit luctus neque"
-          </p>
-          <p>Patrick Greenish</p>
+        <div class="max-w-2xl mx-auto">
+          <!-- SLIDER -->
+          <div class="reviewSlider text-center">
+            <!-- 1 -->
+            <div>
+              <img
+                src="../IMG/feedback.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Patrick Greenish</p>
+            </div>
+            <!-- 2 -->
+            <div>
+              <img
+                src="../IMG/feedback2.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Sarah Wilson</p>
+            </div>
+            <!-- 3 -->
+            <div>
+              <img
+                src="../IMG/feedback3.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Michael Tan</p>
+            </div>
+            <!-- 4 -->
+            <div>
+              <img
+                src="../IMG/feedback4.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Anna Cruz</p>
+            </div>
+            <!-- 5 -->
+            <div>
+              <img
+                src="../IMG/feedback5.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">David Lim</p>
+            </div>
+            <!-- 6 -->
+            <div>
+              <img
+                src="../IMG/feedback6.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Emma Garcia</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- lets connect -->
     <div class="bg-primary">
@@ -377,5 +540,7 @@
 
     <script src="../js/toggleMenu.js"></script>
     <script src="../js/tab.js"></script>
-  </body>
+    <script src="../js/faqItem.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="../js/slider.js"></script>
 </html>
