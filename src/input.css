@@ -65,7 +65,7 @@ sample
     px-4 pb-3 duration-300;
   }
   .headerNav ul li a {
-    @apply font-black;
+    @apply font-bold;
   }
 
   .transparent {
@@ -129,7 +129,7 @@ sample
   }
 
   .foodCard {
-    @apply flex flex-col gap-2 justify-center items-center border-2 border-white py-10 px-5 rounded-2xl max-w-100 absolute -top-9999 md:w-[500px];
+    @apply border border-white w-full rounded-md flex flex-col items-center gap-5 px-5 py-10 absolute -top-9999 lg:w-[450px];
   }
   .foodCard.active {
     @apply relative top-0;
@@ -146,6 +146,10 @@ sample
   .foodCard .stars {
     @apply flex justify-center;
     color: var(--color-third);
+  }
+
+  .ourStory {
+    @apply bg-primary text-white flex justify-between items-center px-4 py-3 font-bold w-full max-w-[550px];
   }
 }
 
