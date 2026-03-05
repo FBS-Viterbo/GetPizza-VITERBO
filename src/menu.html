@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetPizza</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="py-7 fixed shadow-md w-full z-50 bg-white">
+      <div class="container">
+        <!-- wrapper -->
+        <div class="flex justify-between items-center">
+          <!-- logo -->
+          <img class="w-30" src="../img/LOGO.png" alt="" />
+          <!-- navigation -->
+          <nav class="headerNav">
+            <ul>
+              <li><a href="./home.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./menu.html">MENU</a></li>
+              <li><a href="./contact.html">CONTACTS</a></li>
+            </ul>
+          </nav>
+          <!-- toggle menu -->
+          <div class="toggleMenu">
+            <span></span>
+            <span></span>
+          </div>
+          <!-- transparent -->
+          <div class="transparent"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex gap-2 pt-30 px-10 relative z-4 w-fit m-auto">
+      <i class="mt-1 fa-solid fa-bullhorn text-[var(--color-primary)]"></i>
+      <p class="text-[var(--color-primary)] font-bold text-center w-fit">
+        This website provides information about our store. Online transactions
+        are coming soon.
+      </p>
+    </div>
+
+    <!-- banner -->
+    <div class="relative h-[700px] w-full overflow-hidden">
+      <img
+        src="../img/menubanner.jpg"
+        alt="menuBanner"
+        class="absolute inset-0 w-full h-full object-cover object-left"
+      />
+      <div
+        class="absolute inset-0 w-full h-full object-cover object-left bg-black/70"
+      ></div>
+      <div class="container relative z-10 flex justify-center items-center">
+        <h2 class="text-white mt-60 font-extrabold">
+          ALWAYS FRESH <br />
+          & READY TO BE <br />
+          SERVED.
+        </h2>
+      </div>
+    </div>
+
+    <!-- choices -->
+    <div class="bg-secondary">
+      <div class="container max-w-[800px]">
+        <!-- wrapper -->
+        <div class="py-10">
+          <!-- choicesTab -->
+          <div class="flex justify-center items-center">
+            <ul class="menuChoices">
+              <li class="active" id="pizza">
+                <a>PIZZA</a>
+                <span></span>
+              </li>
+              <li id="burger">
+                <a>BURGER</a>
+                <span></span>
+              </li>
+              <li id="chicken">
+                <a>CHICKEN</a>
+                <span></span>
+              </li>
+              <li id="drinks">
+                <a>DRINKS</a>
+                <span></span>
+              </li>
+              <li id="cake">
+                <a>CAKE</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- cards -->
+          <div class="grid grid-cols-3 grid-rows-2 mt-10 text-white gap-10">
+            <!-- pizza 1 -->
+            <div class="menuCard active card_pizza flex flex-col items-center">
+              <img class="mb-5" src="../img/prosciutto.png" alt="pizza" />
+              <h5>BBQ PIZZA</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <!-- pizza 2 -->
+            <div class="menuCard active card_pizza flex flex-col items-center">
+              <img class="mb-5" src="../img/prosciutto.png" alt="pizza" />
+              <h5>BBQ PIZZA</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <!-- pizza 3 -->
+            <div class="menuCard active card_pizza flex flex-col items-center">
+              <img class="mb-5" src="../img/prosciutto.png" alt="pizza" />
+              <h5>BBQ PIZZA</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <!-- pizza 4 -->
+            <div class="menuCard active card_pizza flex flex-col items-center">
+              <img class="mb-5" src="../img/prosciutto.png" alt="pizza" />
+              <h5>BBQ PIZZA</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <!-- pizza 5 -->
+            <div class="menuCard active card_pizza flex flex-col items-center">
+              <img class="mb-5" src="../img/prosciutto.png" alt="pizza" />
+              <h5>BBQ PIZZA</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <!-- pizza 6 -->
+            <div class="menuCard active card_pizza flex flex-col items-center">
+              <img class="mb-5" src="../img/prosciutto.png" alt="pizza" />
+              <h5>BBQ PIZZA</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+
+            <!-- burger 1 -->
+            <div class="menuCard card_burger flex flex-col items-center">
+              <img class="mb-5" src="../img/CHEESE BURGER.png" alt="pizza" />
+              <h5>BURGER</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_burger flex flex-col items-center">
+              <img class="mb-5" src="../img/CHEESE BURGER.png" alt="pizza" />
+              <h5>BURGER</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_burger flex flex-col items-center">
+              <img class="mb-5" src="../img/CHEESE BURGER.png" alt="pizza" />
+              <h5>BURGER</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_burger flex flex-col items-center">
+              <img class="mb-5" src="../img/CHEESE BURGER.png" alt="pizza" />
+              <h5>BURGER</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_burger flex flex-col items-center">
+              <img class="mb-5" src="../img/CHEESE BURGER.png" alt="pizza" />
+              <h5>BURGER</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_burger flex flex-col items-center">
+              <img class="mb-5" src="../img/CHEESE BURGER.png" alt="pizza" />
+              <h5>BURGER</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+
+            <!-- chicken -->
+            <div class="menuCard card_chicken flex flex-col items-center">
+              <img
+                class="mb-5"
+                src="../img/CHICKEN WITH BREAD.png"
+                alt="pizza"
+              />
+              <h5>CHICKEN</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_chicken flex flex-col items-center">
+              <img
+                class="mb-5"
+                src="../img/CHICKEN WITH BREAD.png"
+                alt="pizza"
+              />
+              <h5>CHICKEN</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_chicken flex flex-col items-center">
+              <img
+                class="mb-5"
+                src="../img/CHICKEN WITH BREAD.png"
+                alt="pizza"
+              />
+              <h5>CHICKEN</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_chicken flex flex-col items-center">
+              <img
+                class="mb-5"
+                src="../img/CHICKEN WITH BREAD.png"
+                alt="pizza"
+              />
+              <h5>CHICKEN</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_chicken flex flex-col items-center">
+              <img
+                class="mb-5"
+                src="../img/CHICKEN WITH BREAD.png"
+                alt="pizza"
+              />
+              <h5>CHICKEN</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_chicken flex flex-col items-center">
+              <img
+                class="mb-5"
+                src="../img/CHICKEN WITH BREAD.png"
+                alt="pizza"
+              />
+              <h5>CHICKEN</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+
+            <!-- drinks -->
+            <div class="menuCard card_drinks flex flex-col items-center">
+              <img class="mb-5" src="../img/ORANGE DRINK.png" alt="pizza" />
+              <h5>DRINKS</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_drinks flex flex-col items-center">
+              <img class="mb-5" src="../img/ORANGE DRINK.png" alt="pizza" />
+              <h5>DRINKS</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_drinks flex flex-col items-center">
+              <img class="mb-5" src="../img/ORANGE DRINK.png" alt="pizza" />
+              <h5>DRINKS</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_drinks flex flex-col items-center">
+              <img class="mb-5" src="../img/ORANGE DRINK.png" alt="pizza" />
+              <h5>DRINKS</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_drinks flex flex-col items-center">
+              <img class="mb-5" src="../img/ORANGE DRINK.png" alt="pizza" />
+              <h5>DRINKS</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_drinks flex flex-col items-center">
+              <img class="mb-5" src="../img/ORANGE DRINK.png" alt="pizza" />
+              <h5>DRINKS</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <!-- cake -->
+            <div class="menuCard card_cake flex flex-col items-center">
+              <img class="mb-5" src="../img/MUFFIN-CAKE.png" alt="pizza" />
+              <h5>CAKE</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_cake flex flex-col items-center">
+              <img class="mb-5" src="../img/MUFFIN-CAKE.png" alt="pizza" />
+              <h5>CAKE</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_cake flex flex-col items-center">
+              <img class="mb-5" src="../img/MUFFIN-CAKE.png" alt="pizza" />
+              <h5>CAKE</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_cake flex flex-col items-center">
+              <img class="mb-5" src="../img/MUFFIN-CAKE.png" alt="pizza" />
+              <h5>CAKE</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_cake flex flex-col items-center">
+              <img class="mb-5" src="../img/MUFFIN-CAKE.png" alt="pizza" />
+              <h5>CAKE</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+            <div class="menuCard card_cake flex flex-col items-center">
+              <img class="mb-5" src="../img/MUFFIN-CAKE.png" alt="pizza" />
+              <h5>CAKE</h5>
+              <small>$25.00</small>
+              <div class="stars text-[#f7b754]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a class="btn btn--secondary mt-3">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- lets connect -->
+    <div class="bg-primary">
+      <div class="container max-w-[800px]">
+        <!-- wrapper -->
+        <div class="md:grid md:grid-cols-2 md:items-center md:justify-center">
+          <img class="hidden md:block" src="../img/chef.png" alt="" />
+          <div>
+            <div class="py-10 flex flex-col justify-center items-center">
+              <h6 class="text-white">LET'S CONNECT</h2>
+              <small class="text-white"
+                >and get a 10% off bill offers and invites</small
+              >
+              <div class="flex gap-2 bg-white px-5 mt-5 py-2">
+                <input
+                  class="outline-0"
+                  type="text"
+                  placeholder="YOUR EMAIL ADDRESS"
+                />
+                <a href="" class="btn btn--third">SUBSCRIBE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- address -->
+    <div class="py-5">
+      <div class="container max-w-[800px]">
+        <!-- wrapper -->
+        <div
+          class="flex flex-col gap-5 justify-center items-center text-center"
+        >
+          <img src="../img/LOGO.png" alt="" />
+          <div
+            class="flex flex-col gap-5 justify-center items-center text-center md:grid md:grid-cols-3 md:items-start md:gap-10"
+          >
+            <div>
+              <h6>ADDRESS</h6>
+              <p>570 8th Ave, New York, NY</p>
+              <p>10018 United States</p>
+            </div>
+            <div>
+              <h6>BOOK A TABLE</h6>
+              <p>Dogfood Och Sliders Foodtruck. Under Om Oss Kan Ni Läsa</p>
+            </div>
+            <div>
+              <h6>OPENING HOURS</h6>
+              <p>Monday - Friday</p>
+              <p>10.00 AM-11.00 PM</p>
+            </div>
+          </div>
+          <p class="text-primary mt-10">0123456987</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/toggleMenu.js"></script>
+    <script src="../js/tab.js"></script>
+  </body>
+</html>

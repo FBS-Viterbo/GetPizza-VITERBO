@@ -92,7 +92,7 @@ sample
   }
 
   .btn {
-    @apply px-4 py-2 rounded-2xl font-bold  w-fit cursor-pointer;
+    @apply px-4 py-2 rounded-2xl  w-fit cursor-pointer;
   }
   .btn--primary {
     @apply bg-primary text-white;
@@ -134,8 +134,8 @@ sample
   .foodCard.active {
     @apply relative top-0;
   }
-  .foodCard h4 {
-    @apply text-white text-center;
+  .foodCard h5 {
+    @apply text-white text-center font-bold;
   }
   .foodCard small {
     @apply font-bold text-white text-center;
@@ -150,6 +150,39 @@ sample
 
   .ourStory {
     @apply bg-primary text-white flex justify-between items-center px-4 py-3 font-bold w-full max-w-[550px];
+  }
+
+  .menuChoices {
+    @apply flex w-full items-center justify-center bg-[#F2B24C] rounded-full py-3 text-sm font-semibold;
+  }
+  .menuChoices li {
+    @apply flex flex-row items-center justify-center cursor-pointer;
+  }
+  .menuChoices li a {
+    @apply text-secondary text-[18px] px-3 md:px-10;
+  }
+  .menuChoices li.active a {
+    @apply text-primary;
+  }
+  .menuChoices li a:hover {
+    @apply text-primary;
+  }
+
+  .menuChoices li h6 {
+    @apply mx-5;
+  }
+  .menuChoices span {
+    @apply block w-0.5 h-6.25 bg-white;
+  }
+
+  .menuCard {
+    @apply md:border md:border-white md:rounded-md md:p-5 absolute -top-999;
+  }
+  .menuCard img {
+    @apply size-30;
+  }
+  .menuCard.active {
+    @apply relative top-0;
   }
 }
 
