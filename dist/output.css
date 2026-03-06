@@ -246,6 +246,9 @@
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -321,8 +324,8 @@
   .max-w-\[800px\] {
     max-width: 800px;
   }
-  .max-w-\[1200px\] {
-    max-width: 1200px;
+  .max-w-\[1100px\] {
+    max-width: 1100px;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -374,6 +377,10 @@
   }
   .rounded-md {
     border-radius: var(--radius-md);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-8 {
     border-style: var(--tw-border-style);
@@ -435,6 +442,9 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .py-15 {
+    padding-block: calc(var(--spacing) * 15);
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
@@ -845,7 +855,7 @@
     position: relative;
     top: calc(var(--spacing) * 0);
   }
-  .foodCard h5 {
+  .foodCard h4 {
     text-align: center;
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -885,12 +895,12 @@
     align-items: center;
     justify-content: center;
     border-radius: calc(infinity * 1px);
-    background-color: #F2B24C;
     padding-block: calc(var(--spacing) * 3);
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+    background-color: var(--color-third);
   }
   .menuChoices li {
     display: flex;
@@ -946,6 +956,32 @@
   .menuCard.active {
     position: relative;
     top: calc(var(--spacing) * 0);
+  }
+  .getInTouch {
+    margin-top: calc(var(--spacing) * 10);
+    background-color: var(--color-third);
+  }
+  .getInTouch form {
+    margin-top: calc(var(--spacing) * 7);
+    display: flex;
+    width: 100%;
+    max-width: calc(var(--spacing) * 162);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing) * 4);
+  }
+  .getInTouch form input {
+    width: 100%;
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+    padding: calc(var(--spacing) * 2.5);
+  }
+  .getInTouch form textarea {
+    width: 100%;
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+    padding: calc(var(--spacing) * 2.5);
   }
 }
 @layer utilities;

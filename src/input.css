@@ -134,7 +134,7 @@ sample
   .foodCard.active {
     @apply relative top-0;
   }
-  .foodCard h5 {
+  .foodCard h4 {
     @apply text-white text-center font-bold;
   }
   .foodCard small {
@@ -153,7 +153,8 @@ sample
   }
 
   .menuChoices {
-    @apply flex w-full items-center justify-center bg-[#F2B24C] rounded-full py-3 text-sm font-semibold;
+    @apply flex w-full items-center justify-center rounded-full py-3 text-sm font-semibold;
+    background-color: var(--color-third);
   }
   .menuChoices li {
     @apply flex flex-row items-center justify-center cursor-pointer;
@@ -183,6 +184,20 @@ sample
   }
   .menuCard.active {
     @apply relative top-0;
+  }
+
+  .getInTouch {
+    @apply mt-10;
+    background-color: var(--color-third);
+  }
+  .getInTouch form {
+    @apply flex flex-col gap-4 mt-7 items-center justify-center w-full max-w-162;
+  }
+  .getInTouch form input {
+    @apply bg-white p-2.5 rounded-md w-full;
+  }
+  .getInTouch form textarea {
+    @apply bg-white p-2.5 rounded-md w-full;
   }
 }
 

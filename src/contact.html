@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetPizza</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="py-7 fixed shadow-md w-full z-50 bg-white">
+      <div class="container">
+        <!-- wrapper -->
+        <div class="flex justify-between items-center">
+          <!-- logo -->
+          <img class="w-30" src="../img/LOGO.png" alt="" />
+          <!-- navigation -->
+          <nav class="headerNav">
+            <ul>
+              <li><a href="./home.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./menu.html">MENU</a></li>
+              <li><a href="./contact.html">CONTACTS</a></li>
+            </ul>
+          </nav>
+          <!-- toggle menu -->
+          <div class="toggleMenu">
+            <span></span>
+            <span></span>
+          </div>
+          <!-- transparent -->
+          <div class="transparent"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex gap-2 pt-30 px-10 relative z-4 w-fit m-auto">
+      <i class="mt-1 fa-solid fa-bullhorn text-[var(--color-primary)]"></i>
+      <p class="text-[var(--color-primary)] font-bold text-center w-fit">
+        This website provides information about our store. Online transactions
+        are coming soon.
+      </p>
+    </div>
+
+    <!-- map -->
+    <section>
+      <div class="container">
+        <!-- wrapper -->
+        <div class="max-w-[1100px] m-auto">
+          <iframe
+            class="w-full mt-5"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23511185.28747561!2d27.74953769999995!3d-68.92020888031317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb09dff882a7809e1%3A0xb08d0a385dc8c7c7!2sAntarctica!5e0!3m2!1sen!2sph!4v1772753912327!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- get in touch -->
+    <section class="getInTouch">
+      <div class="container">
+        <!-- wrapper -->
+        <div class="flex flex-col justify-center items-center w-full py-15">
+          <h1 class="font-extrabold">GET IN TOUCH</h1>
+          <form>
+            <div class="grid grid-cols-2 gap-5 w-full">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
+            <input type="text" placeholder="Email Address" />
+            <input type="text" placeholder="Subject" />
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn--primary mt-2">
+              SUBMIT FORM
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- address -->
+    <div class="py-5">
+      <div class="container max-w-[800px]">
+        <!-- wrapper -->
+        <div
+          class="flex flex-col gap-5 justify-center items-center text-center"
+        >
+          <img src="../img/LOGO.png" alt="" />
+          <div
+            class="flex flex-col gap-5 justify-center items-center text-center md:grid md:grid-cols-3 md:items-start md:gap-10"
+          >
+            <div>
+              <h5>ADDRESS</h5>
+              <p>570 8th Ave, New York, NY</p>
+              <p>10018 United States</p>
+            </div>
+            <div>
+              <h5>BOOK A TABLE</h5>
+              <p>Dogfood Och Sliders Foodtruck. Under Om Oss Kan Ni Läsa</p>
+            </div>
+            <div>
+              <h5>OPENING HOURS</h5>
+              <p>Monday - Friday</p>
+              <p>10.00 AM-11.00 PM</p>
+            </div>
+          </div>
+          <p class="text-primary mt-10">0123456987</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
